@@ -32,10 +32,8 @@ export default Service.extend({
 
   async _load() {
     let json = await fetchJSON('/index.json');
-    await all(json.papers.map(identifier => this.paper(identifier).load()));
-    this.setProperties({
-      title: json.title
-    });
+    await all(json.papers.map(identifier => this.paper(identifier).loadIndex()));
+    this.set('title', json.title);
   },
 
   async load() {

@@ -1,5 +1,5 @@
 import EmberObject from '@ember/object';
-import { equal } from '@ember/object/computed';
+import { equal, or } from '@ember/object/computed';
 import { lookup } from '../lib/computed';
 import { Promise, resolve } from 'rsvp';
 import { next } from '@ember/runloop';
@@ -24,6 +24,8 @@ export default EmberObject.extend({
   isParsed: equal('state', 'parsed'),
   isDone:   equal('state', 'done'),
   isError:  equal('state', 'error'),
+
+  titleOrIdentifier: or('index.title', 'identifier'),
 
   index: null,
   content: null,
@@ -111,6 +113,15 @@ export default EmberObject.extend({
     let promise = resolve().then(() => this.__load());
     this.set('promise', promise);
     return promise;
+  },
+
+  async loadIndex() {
+    let index = this.get('index');
+    if(!index) {
+      let loaded = await this.get('loader').loadIndex();
+      this.set('index', loaded);
+    }
+    return this;
   },
 
   load(reload=false) {
