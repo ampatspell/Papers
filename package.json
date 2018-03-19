@@ -1,0 +1,12 @@
+{
+  "name": "papers",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "start": "(cd app && ember s)"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
