@@ -5,10 +5,10 @@
   "description": "",
   "scripts": {
     "start": "(cd app && ember s)",
-    "_bump": "(cd app && npm version patch) && git push --follow-tags",
+    "_bump": "npm version patch && git push --follow-tags",
     "_build": "(cd app && ember build -prod)",
     "_deploy": "firebase deploy",
-    "deploy": "npm run _build && npm run _deploy"
+    "deploy": "npm run _bump && npm run _build && npm run _deploy"
   },
   "keywords": [],
   "author": "",
