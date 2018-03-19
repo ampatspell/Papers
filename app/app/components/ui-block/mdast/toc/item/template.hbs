@@ -1,0 +1,8 @@
+<div class="title" {{action 'select' item}}>{{item.text}}</div>
+{{#if item.children}}
+  <div class="children">
+    {{#each item.children as |item|}}
+      {{ui-block/mdast/toc/item item=item selected=selected select=select}}
+    {{/each}}
+  </div>
+{{/if}}

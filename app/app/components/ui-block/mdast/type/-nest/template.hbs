@@ -1,0 +1,3 @@
+{{~#each data.children as |child|~}}
+  {{~component (concat 'ui-block/mdast/type/' (dasherize child.type)) data=child parent=parent root=parent.root~}}
+{{~/each~}}

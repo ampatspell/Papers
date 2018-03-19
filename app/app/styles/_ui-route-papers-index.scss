@@ -1,0 +1,21 @@
+.ui-route-papers-index {
+  padding: 20px;
+  > .title {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  > .papers {
+    > .paper {
+      > .link {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+  @include for-size(tablet-landscape-up) {
+    padding: 30px;
+  }
+  @include for-size(desktop-up) {
+    padding: 50px;
+  }
+}

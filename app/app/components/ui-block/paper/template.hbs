@@ -1,0 +1,27 @@
+{{#if isDone}}
+  <div class="sidebar">
+    <div class="header">
+      {{link-to '← Papers' 'papers' class='back'}}
+    </div>
+    {{ui-block/mdast/toc data=content selected=selected select=(action 'select') class='toc'}}
+  </div>
+  <div class="content">
+    {{ui-block/mdast/renderer data=content select=(action 'select') registration=(action 'registration')}}
+  </div>
+{{else if paper.isError}}
+  <div class="placeholder">
+    {{paper.error.message}}
+  </div>
+{{else if paper.isParsed}}
+  <div class="placeholder">
+    Rendering "{{paper.identifier}}"…
+  </div>
+{{else if paper.isDone}}
+  <div class="placeholder">
+    Rendering "{{paper.identifier}}"…
+  </div>
+{{else}}
+  <div class="placeholder">
+    Loading "{{paper.identifier}}"…
+  </div>
+{{/if}}

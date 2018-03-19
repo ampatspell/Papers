@@ -1,0 +1,65 @@
+.ui-block-paper {
+  max-width: 100%;
+  > .sidebar {
+    padding: 20px 20px 0 20px;
+    > .header {
+      > .back {
+        line-height: 20px;
+        text-decoration: none;
+      }
+      margin-bottom: 20px;
+    }
+    > .toc {
+      display: none;
+    }
+  }
+  > .content {
+    padding: 20px;
+    max-width: 100%;
+    .image {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  > .placeholder {
+    padding: 20px;
+  }
+  @media print {
+    > .sidebar {
+      display: none;
+    }
+    > .content {
+      max-width: auto;
+      padding: 30px;
+    }
+  }
+  @mixin sidebar-content($sidebar, $padding) {
+    > .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: $sidebar;
+      bottom: 0;
+      padding: $padding $padding $padding $padding;
+      overflow-y: scroll;
+      > .toc {
+        display: block;
+      }
+    }
+    > .content {
+      padding: $padding $padding $padding $sidebar + $padding;
+    }
+    > .placeholder {
+      padding: $padding;
+    }
+  }
+  @include for-size(tablet-landscape-up) {
+    @include sidebar-content(250px, 30px);
+  }
+  @include for-size(desktop-up) {
+    @include sidebar-content(350px, 50px);
+    > .content {
+      max-width: 1024px + 300px + 50px;
+    }
+  }
+}

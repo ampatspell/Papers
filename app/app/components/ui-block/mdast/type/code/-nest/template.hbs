@@ -1,0 +1,3 @@
+{{~#each data as |item|~}}
+  {{~component (concat 'ui-block/mdast/type/code/' item.type) data=item~}}
+{{~/each~}}

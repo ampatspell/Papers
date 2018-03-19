@@ -1,0 +1,6 @@
+<div class="title">{{papers.title}}</div>
+<div class="papers">
+  {{#each papers.identity.all as |paper|}}
+    <div class="paper">{{link-to paper.index.title 'papers.paper' paper class='link'}}</div>
+  {{/each}}
+</div>

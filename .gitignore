@@ -1,0 +1,9 @@
+/app/dist
+/app/tmp
+/app/node_modules
+/app/.sass-cache
+/app/connect.lock
+
+npm-debug.log*
+yarn-error.log
+testem.log
