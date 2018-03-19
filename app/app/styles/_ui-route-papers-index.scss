@@ -1,14 +1,30 @@
 .ui-route-papers-index {
   padding: 20px;
-  > .title {
+  > .header {
     margin-bottom: 20px;
-    font-weight: 600;
+    > .title {
+      display: inline-block;
+      font-weight: 600;
+    }
+    > .version {
+      display: inline-block;
+      font-size: 12px;
+      color: #999;
+      &:before {
+        content: '(v';
+      }
+      &:after {
+        content: ')';
+      }
+    }
   }
   > .papers {
     > .paper {
       > .link {
         text-decoration: none;
-        color: #000;
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
