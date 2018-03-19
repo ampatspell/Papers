@@ -1,0 +1,14 @@
+{
+  "title": "Developing Web Application with Ember.js Training Course",
+  "sections": [
+    "1-Developing-Web-Applications-with-Ember.js-Training-Course",
+    "2-30-or-so-minutes-hands-on",
+    "3-Object-Model",
+    "4-Initializers",
+    "5-Components",
+    "6-Mixins",
+    "7-Template-Helpers",
+    "8-Data-down-Action-up",
+    "9-Ember-Data"
+  ]
+}
