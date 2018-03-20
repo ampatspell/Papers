@@ -14,9 +14,9 @@ export default Component.extend({
   src: computed('identifier', 'options', function() {
     let { identifier, options } = this.getProperties('identifier', 'options');
     if(identifier.startsWith('/')) {
-      return `/${options.assets}${identifier}`;
+      return `/${options.content}/${options.assets}${identifier}`;
     }
-    return `/${options.identifier}/${options.assets}/${identifier}`;
+    return `/${options.content}/${options.identifier}/${options.assets}/${identifier}`;
   }),
 
 });

@@ -10,6 +10,6 @@ module.exports = {
     return true;
   },
   treeForPublic() {
-    return new Funnel('../content');
+    return new Funnel('../content', { destDir: 'content' });
   }
 };

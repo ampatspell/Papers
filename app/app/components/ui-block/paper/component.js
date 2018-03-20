@@ -16,8 +16,9 @@ export default Component.extend({
 
   options: computed('paper.identifier', function() {
     let identifier = this.get('paper.identifier');
+    let content = 'content';
     let assets = 'assets';
-    return { identifier, assets };
+    return { identifier, content, assets };
   }),
 
   didInsertElement() {

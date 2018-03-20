@@ -10,7 +10,7 @@ export default EmberObject.extend({
 
   urlFor(filename) {
     let identifier = this.get('identifier');
-    return `/${identifier}/${filename}`;
+    return `/content/${identifier}/${filename}`;
   },
 
   async loadIndex() {
