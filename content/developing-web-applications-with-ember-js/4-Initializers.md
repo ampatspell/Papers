@@ -46,6 +46,4 @@ export default {
 }
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_EC486933B01607EF76E2004367E0E49393D44CD28BF420C7138345BC074E1915_1521031513278_Screen+Shot+2018-03-14+at+14.40.37.png)
-
-
+![04/01.png]

@@ -181,4 +181,4 @@ export default Mixin.create({
 
 > Psst, there is an addon for that
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_712FFFA8D1C3FDC1CE138A57CE1FF4925D6BFDA523F5A746B2D94F6FD7BB2C9C_1520963943918_Screen+Shot+2018-03-13+at+19.58.52.png)
+![06/01.png]

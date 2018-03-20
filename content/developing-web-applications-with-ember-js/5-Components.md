@@ -462,7 +462,7 @@ export default Component.extend({
 temp1('be nice')
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_7B5D8F285C17B6DDD6867EF7B138EFC38E90A924B3A9616B7DD0BC40CABBE30E_1520950899146_Screen+Shot+2018-03-13+at+16.21.27.png)
+![05/01.png]
 
 ``` hbs
 // app/components/ui-route/playground/template.hbs

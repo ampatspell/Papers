@@ -42,7 +42,7 @@ const items = [
 ];
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_6BC513A145A534317B915CEDCFCCFD4CD557325A02599663F5E533207F0BF63F_1520785342899_Screen+Shot+2018-03-11+at+18.22.14.png)
+![03/01.png]
 
 ## playground.js
 
@@ -175,7 +175,7 @@ export default Component.extend({
 </div>
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_6BC513A145A534317B915CEDCFCCFD4CD557325A02599663F5E533207F0BF63F_1520788232389_Screen+Shot+2018-03-11+at+19.10.21.png)
+![03/02.png]
 
 > `toString`, `toStringExtension` for debugging (but container provides `toString`)
 
@@ -544,7 +544,7 @@ export const Person = EmberObject.extend({
 });
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_6BC513A145A534317B915CEDCFCCFD4CD557325A02599663F5E533207F0BF63F_1520795196706_Screen+Shot+2018-03-11+at+21.06.20.png)
+![03/03.png]
 
 ## Destroy
 

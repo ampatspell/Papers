@@ -335,7 +335,7 @@ authors.get('firstObject.isNew')
 // false
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_7B5D8F285C17B6DDD6867EF7B138EFC38E90A924B3A9616B7DD0BC40CABBE30E_1520876610121_Screen+Shot+2018-03-12+at+19.43.22.png)
+![09/01.png]
 
 So, we’ve seen how to load models from remote api endpoint, now we can work on the ui to display this data.
 
@@ -355,7 +355,7 @@ this.route('quotes', function() {
 });
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_7B5D8F285C17B6DDD6867EF7B138EFC38E90A924B3A9616B7DD0BC40CABBE30E_1520944378714_Screen+Shot+2018-03-13+at+14.32.51.png)
+![09/02.png]
 
 ``` hbs
 // app/templates/quotes.hbs
@@ -368,7 +368,7 @@ this.route('quotes', function() {
 <p>quotes/index.hbs</p>
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_7B5D8F285C17B6DDD6867EF7B138EFC38E90A924B3A9616B7DD0BC40CABBE30E_1520944555639_Screen+Shot+2018-03-13+at+14.35.51.png)
+![09/03.png]
 
 ## Quotes index
 
@@ -434,7 +434,7 @@ this.timing = 5000;
 Loading quotes…
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_7B5D8F285C17B6DDD6867EF7B138EFC38E90A924B3A9616B7DD0BC40CABBE30E_1520945449410_Screen+Shot+2018-03-13+at+14.50.37.png)
+![09/04.png]
 
 ### set-global template helper
 
@@ -470,7 +470,7 @@ export default helper(setGlobal);
 {{set-global component=this quotes=quotes}}
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_7B5D8F285C17B6DDD6867EF7B138EFC38E90A924B3A9616B7DD0BC40CABBE30E_1520946978830_Screen+Shot+2018-03-13+at+15.16.14.png)
+![09/05.png]
 
 ### Render quotes
 
@@ -504,7 +504,7 @@ export default Component.extend({
 });
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_7B5D8F285C17B6DDD6867EF7B138EFC38E90A924B3A9616B7DD0BC40CABBE30E_1521074528227_Screen+Shot+2018-03-15+at+02.41.59.png)
+![09/06.png]
 
 > Use `classNameBindings` in components. Nearly always you need `action:has-action:no-action` bindings or something along those lines for css.
 
@@ -661,7 +661,7 @@ export default Component.extend({
 * if proxy is not yet resolved, it will still have an `id` property, proxies automatically loads content on property access
 * distinguish between proxy and model (especially when doing equality comparisons)
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_7B5D8F285C17B6DDD6867EF7B138EFC38E90A924B3A9616B7DD0BC40CABBE30E_1521076856534_Screen+Shot+2018-03-15+at+03.20.42.png)
+![09/07.png]
 
 ### Transition to quotes.quote route
 
@@ -800,7 +800,7 @@ export default {
 
 > Inject `service:router` into all components as `router` property
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_7B5D8F285C17B6DDD6867EF7B138EFC38E90A924B3A9616B7DD0BC40CABBE30E_1521081426478_Screen+Shot+2018-03-15+at+04.37.00.png)
+![09/08.png]
 
 ## Edit quote
 
@@ -1011,4 +1011,4 @@ export default [
 this.patch('/quotes/:id');
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_7B5D8F285C17B6DDD6867EF7B138EFC38E90A924B3A9616B7DD0BC40CABBE30E_1521207199973_Screen+Shot+2018-03-16+at+15.32.14.png)
+![09/09.png]

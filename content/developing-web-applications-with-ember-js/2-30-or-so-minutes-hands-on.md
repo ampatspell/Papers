@@ -8,7 +8,7 @@ Let's start with a 30 minute crash course in Ember.js where we will:
 
 For CSS styling we will use **ember-cli-sass** which is an Ember.js addon.
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_AD91DAD95B3B7B1D2C7EA65DD937332F01C22382FBFAC5AB050ACC23BC1749B2_1520507274211_image_preview-1.png)
+![02/01.png]
 
 ## First need to briefly talk about **Routes** and **View Tree**
 
@@ -50,7 +50,7 @@ For CSS styling we will use **ember-cli-sass** which is an Ember.js addon.
   }
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_AD91DAD95B3B7B1D2C7EA65DD937332F01C22382FBFAC5AB050ACC23BC1749B2_1520172761367_Screen+Shot+2018-03-04+at+16.12.35.png)
+![02/02.png]
 
 ## Install **ember-cli-sass**
 
@@ -158,7 +158,7 @@ Router.map(function() {
 <p>this is app. this is ember app. this is about page in an ember app.</p>
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_AD91DAD95B3B7B1D2C7EA65DD937332F01C22382FBFAC5AB050ACC23BC1749B2_1520173443641_Screen+Shot+2018-03-04+at+16.23.43.png)
+![02/03.png]
 
 ## Create **navigation-bar** component
 
@@ -197,7 +197,7 @@ navigation bar
 {{outlet}}
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_AD91DAD95B3B7B1D2C7EA65DD937332F01C22382FBFAC5AB050ACC23BC1749B2_1520175450124_Screen+Shot+2018-03-04+at+16.57.20.png)
+![02/04.png]
 
 ### Application name
 
@@ -215,8 +215,7 @@ navigation bar
 <div class="name">{{applicationName}}</div>
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_AD91DAD95B3B7B1D2C7EA65DD937332F01C22382FBFAC5AB050ACC23BC1749B2_1520176185217_Screen+Shot+2018-03-04+at+17.09.38.png)
-
+![02/05.png]
 
 ### Copy-paste time
 
@@ -265,7 +264,7 @@ export default Component.extend({
 });
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_AD91DAD95B3B7B1D2C7EA65DD937332F01C22382FBFAC5AB050ACC23BC1749B2_1520176460510_Screen+Shot+2018-03-04+at+17.14.12.png)
+![02/06.png]
 
 ### Add navigation bar items
 
@@ -293,7 +292,7 @@ export default Component.extend({
 {{log items}}
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_AD91DAD95B3B7B1D2C7EA65DD937332F01C22382FBFAC5AB050ACC23BC1749B2_1520176944577_Screen+Shot+2018-03-04+at+17.22.14.png)
+![02/07.png]
 
 ### Each helper
 
@@ -306,7 +305,7 @@ export default Component.extend({
 {{/each}}
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_AD91DAD95B3B7B1D2C7EA65DD937332F01C22382FBFAC5AB050ACC23BC1749B2_1520177002532_Screen+Shot+2018-03-04+at+17.23.09.png)
+![02/08.png]
 
 ### Rendering links
 
@@ -355,7 +354,7 @@ export default Component.extend({
 @import "ui-block-application";
 ```
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_AD91DAD95B3B7B1D2C7EA65DD937332F01C22382FBFAC5AB050ACC23BC1749B2_1520177278668_Screen+Shot+2018-03-04+at+17.27.50.png)
+![02/09.png]
 
 And we're done. High-five.
 
