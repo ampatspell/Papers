@@ -1,4 +1,5 @@
 import Component from '@ember/component';
+import { computed } from '@ember/object';
 import { readOnly, and } from '@ember/object/computed';
 import { next, cancel } from '@ember/runloop';
 
@@ -12,6 +13,12 @@ export default Component.extend({
 
   render: false,
   isDone: and('paper.isDone', 'render'),
+
+  options: computed('paper.identifier', function() {
+    let identifier = this.get('paper.identifier');
+    let assets = 'assets';
+    return { identifier, assets };
+  }),
 
   didInsertElement() {
     this._super(...arguments);

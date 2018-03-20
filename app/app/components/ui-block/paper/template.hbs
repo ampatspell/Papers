@@ -6,7 +6,12 @@
     {{ui-block/mdast/toc data=content selected=selected select=(action 'select') class='toc'}}
   </div>
   <div class="content">
-    {{ui-block/mdast/renderer data=content select=(action 'select') registration=(action 'registration')}}
+    {{ui-block/mdast/renderer
+        data=content
+        options=options
+        select=(action 'select')
+        registration=(action 'registration')
+    }}
   </div>
 {{else if paper.isError}}
   <div class="placeholder">
